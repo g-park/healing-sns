@@ -1,0 +1,11 @@
+package com.example.msns_taskshowtestproject_ver01.StaticValue;
+
+public class StaticValue {
+	/*몇초마다 저장할 */
+	public static long NUMBEROFALARMTERM = 3000;
+	
+	/*사용/중지 flasg*/
+	
+	public static boolean runningflag;
+	
+}

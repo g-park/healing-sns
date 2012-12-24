@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab4_child_scrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ccffffff" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <ToggleButton
+                android:id="@+id/toggleButtonONOFF"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/button_toggle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/alarmadd_btn_cancel"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_defalut"
+                android:text="취소"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnComplete"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/button_defalut"
+                android:text="등록"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:padding="15dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/clock" />
+
+                <DigitalClock
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="DigitalClock"
+                    android:textColor="#222222"
+                    android:textSize="10pt" />
+            </LinearLayout>
+
+            <com.garamsoft.bubble.view.JGTimePicker
+                android:id="@+id/jGTimePicker1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false" >
+            </com.garamsoft.bubble.view.JGTimePicker>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="요일"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <ToggleButton
+                    android:id="@+id/toggleMon"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_toggle"
+                    android:textOff="월"
+                    android:textOn="월" />
+
+                <ToggleButton
+                    android:id="@+id/toggleTue"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_toggle"
+                    android:textOff="화"
+                    android:textOn="화" />
+
+                <ToggleButton
+                    android:id="@+id/toggleWed"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_toggle"
+                    android:textOff="수"
+                    android:textOn="수" />
+
+                <ToggleButton
+                    android:id="@+id/toggleThu"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_toggle"
+                    android:textOff="목"
+                    android:textOn="목" />
+
+                <ToggleButton
+                    android:id="@+id/toggleFri"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_toggle"
+                    android:textOff="금"
+                    android:textOn="금" />
+
+                <ToggleButton
+                    android:id="@+id/toggleSat"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_toggle"
+                    android:textOff="토"
+                    android:textOn="토" />
+
+                <ToggleButton
+                    android:id="@+id/toggleSun"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_toggle"
+                    android:textOff="일"
+                    android:textOn="일" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="빠른 설정"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <ToggleButton
+                    android:id="@+id/toggleMid"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_toggle"
+                    android:text="ToggleButton"
+                    android:textOff="주중"
+                    android:textOn="주중" />
+
+                <ToggleButton
+                    android:id="@+id/toggleEnd"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_toggle"
+                    android:text="ToggleButton"
+                    android:textOff="주말"
+                    android:textOn="주말" />
+
+                <ToggleButton
+                    android:id="@+id/toggleEve"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_toggle"
+                    android:text="ToggleButton"
+                    android:textOff="매일"
+                    android:textOn="매일" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="진동/소리"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <ToggleButton
+                    android:id="@+id/toggleVib"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/button_toggle_vib"
+                    android:textOff=" "
+                    android:textOn=" " />
+
+                <ToggleButton
+                    android:id="@+id/toggleSound"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button_toggle_sound"
+                    android:textOff=" "
+                    android:textOn=" " />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="미루기"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_snooze"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radio_btn_snooze0"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/button_toggle"
+                        android:text="d" >
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/radio_btn_snooze3"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" >
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/radio_btn_snooze5"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" >
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/radio_btn_snooze10"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" >
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/radio_btn_snooze15"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" >
+                    </RadioButton>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout01"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="미루기"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <ToggleButton
+                    android:id="@+id/toggleButton_00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_toggle"
+                    android:textOff="없음"
+                    android:textOn="없음" />
+
+                <ToggleButton
+                    android:id="@+id/toggleButton_03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_toggle"
+                    android:textOff="3분"
+                    android:textOn="3분" />
+
+                <ToggleButton
+                    android:id="@+id/toggleButton_05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_toggle"
+                    android:textOff="5분"
+                    android:textOn="5분" />
+
+                <ToggleButton
+                    android:id="@+id/toggleButton_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_toggle"
+                    android:textOff="10분"
+                    android:textOn="10분" />
+
+                <ToggleButton
+                    android:id="@+id/toggleButton_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_toggle"
+                    android:textOff="15분"
+                    android:textOn="15분" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="알람음"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/alarmadd_text_songName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:textColor="#000000"
+                    android:text="노래를 선택하세요" />
+
+                <Button
+                    android:id="@+id/alarm_btn_song_select"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button_defalut"
+                    android:text="선택"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="음량 "
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/text_soundVolumn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:text="75"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <SeekBar
+                    android:id="@+id/seekbar_voulme_control"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android="@+id/alarm_text_local_select"
+                android:text="지역설정"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/alarm_spinner_local_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,29 @@
+package com.example.test_andorid_grid_view_main;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+import android.widget.GridLayout;
+import android.widget.GridView;
+import android.widget.ListAdapter;
+
+public class MainActivity extends Activity {
+
+	GridView mainGridView;
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        
+        mainGridView =(GridView)findViewById(R.id.mainGridView);
+        MainGridViewAdapter adapter;
+		mainGridView.setAdapter(adapter);
+        
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.activity_main, menu);
+        return true;
+    }
+}

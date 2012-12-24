@@ -1,0 +1,5 @@
+package com.example.msns_taskshowtestproject_ver01.receiver.ConstValue;
+
+public class ConstValue {
+	public static long NUMBEROFALARMTERM = 3000;
+}

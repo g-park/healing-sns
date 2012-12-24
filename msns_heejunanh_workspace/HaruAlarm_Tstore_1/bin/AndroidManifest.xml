@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.garamsoft.bubble"
+    android:versionCode="4"
+    android:versionName="1.04" >
+
+    <uses-sdk android:minSdkVersion="7" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+
+    <application
+        android:icon="@drawable/main"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@android:style/Theme.Light" >
+        <activity
+            android:name=".activity.start.ActivityStart"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.tab0.ActivityTab0Main"
+            android:label="하루 알람"
+            android:screenOrientation="portrait" android:launchMode="singleTop"/>
+        <activity
+            android:name=".activity.tab1.ActivityTab1HaruAlarmLIst"
+            android:label="하루알람"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.tab1.ActivityTab1UpdataListItem"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".activity.tab1.ActivityTab1AddListItem"
+            android:label="알람 추가"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".activity.tab1.SongSelect"
+            android:label="노래 선택"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.tab2.ActivityTab2WeatherEventList"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.wanning.ActivityInfo"
+            android:screenOrientation="portrait" />
+
+        <receiver android:name=".service.BootBradcastReceiverToAlarmRegister" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".service.ServiceCheck"
+            android:process=":remote" />
+        <service android:name=".service.ServiceWarning" />
+        <service android:name=".service.ServiceToHome" />
+
+        <activity
+            android:name=".activity.wanning.ActivitiyWanning"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.tab3.ActivityTab3_LiveSelect"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.tab3.ActivityTab3_Setting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.tab3.ActivityTab3_Facebook"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.tab3.ActivityTab3_GongJi"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.tab3.ActivityTab3_GongJiChild"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.tab3.ActivityTab3_Version"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

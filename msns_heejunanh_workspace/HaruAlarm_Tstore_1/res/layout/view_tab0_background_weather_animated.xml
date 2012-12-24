@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/frameLayoutBg_day_night"
+    android:background="@drawable/background_1_day"
+    >
+
+    <TextView
+        android:id="@+id/textViewWeatherInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/imageViewSun_moon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_2_sun"
+/>
+    <ImageView
+        android:id="@+id/imageViewCloud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_3_cloud1"
+        android:layout_gravity="center"
+/>
+    <ImageView
+        android:id="@+id/imageViewRain_snow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+</FrameLayout>

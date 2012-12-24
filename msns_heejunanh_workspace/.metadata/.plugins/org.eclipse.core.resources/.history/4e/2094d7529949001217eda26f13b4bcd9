@@ -1,0 +1,46 @@
+package com.example.test_andorid_grid_view_main;
+
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class MainGridItem extends LinearLayout {
+
+	private ImageView mIcon;
+	private TextView mLabel;
+	private int mIconId;
+	private String mLabelString;
+	private int mPosition;
+	private Context mContext;
+	
+	public MainGridItem(Context context) {
+		super(context);
+		mContext = context;
+		
+		LayoutInflater inflater = (LayoutInflater) context
+				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+		View layout = inflater.inflate(R.layout.my_list_item, this);
+		
+		mIcon = (ImageView)layout.findViewById(R.id.icon);
+		mLabel = (TextView)layout.findViewById(R.id.label);
+		
+		mIcon.setOnClickListener(new OnClickListener() {
+			
+			public void onClick(View v) {
+				
+				String str = "iconId :"+mIconId;
+				Toast.makeText(mContext, str, 0).show();
+				if (mlistener != null) {
+					mlistener.OnClickNoty(mIconId, mLabelString, mPosition);
+				}
+			}
+		});
+
+	}
+
+	ImageView imageView;
+}

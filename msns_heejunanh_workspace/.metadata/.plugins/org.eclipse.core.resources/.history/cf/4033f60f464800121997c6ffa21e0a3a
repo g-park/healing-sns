@@ -1,0 +1,13 @@
+
+public class main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		int a = 353;
+		prinft("%c",a);
+
+	}
+
+}

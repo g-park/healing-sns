@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/buttonStartService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="StartService" />
+
+        <Button
+            android:id="@+id/buttonStopService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="StopService" />
+
+        <EditText
+            android:id="@+id/editTextAlarmTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="3" />
+
+        <Button
+            android:id="@+id/buttonAlarmTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="설정" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView_NumberOf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proccess State" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/buttonRunningProccessing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="RunningProc" />
+
+        <Button
+            android:id="@+id/buttonRunningTasks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="RunningTask" />
+
+        <Button
+            android:id="@+id/buttonRecentTaks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="RecentTask" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/editTextNumberOfScan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="개수"
+            android:ems="3"
+            android:inputType="numberDecimal" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/buttonNumberOfScan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="설정" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            tools:context=".MainActivity" />
+    </ScrollView>
+
+</LinearLayout>

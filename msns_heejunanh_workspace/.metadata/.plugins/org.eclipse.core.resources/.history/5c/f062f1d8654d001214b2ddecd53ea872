@@ -1,0 +1,15 @@
+package com.example.msns_taskshowtestproject_ver01.receiver;
+
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+
+public class ScreenReciver extends BroadcastReceiver {
+
+	@Override
+	public void onReceive(Context context, Intent intent) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

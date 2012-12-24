@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">MSNS_TaskShowTestProject_Ver01</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MSN_Ver01</string>
+
+</resources>

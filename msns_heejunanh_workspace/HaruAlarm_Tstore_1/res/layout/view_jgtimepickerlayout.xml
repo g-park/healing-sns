@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btnHHadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/timepicker_btn_up" />
+
+        <EditText
+            android:id="@+id/editTextHH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/timepicker_txtfld"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="1"
+            android:textColor="#000000"
+            android:textSize="15pt" >
+        </EditText>
+
+        <Button
+            android:id="@+id/btnHHsb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/timepicker_btn_down" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btnMMadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/timepicker_btn_up" />
+
+        <EditText
+            android:id="@+id/editTextMM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/timepicker_txtfld"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="30"
+            android:textColor="#000000"
+            android:textSize="15pt" >
+        </EditText>
+
+        <Button
+            android:id="@+id/btnMMsb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/timepicker_btn_down" />
+    </LinearLayout>
+
+    <ToggleButton
+        android:id="@+id/toggleButtonAMPM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/timepicker_am_pm"
+        android:textColor="#ffffff"
+        android:textOff="PM"
+        android:textOn="AM"
+        android:textSize="15pt" />
+
+</LinearLayout>

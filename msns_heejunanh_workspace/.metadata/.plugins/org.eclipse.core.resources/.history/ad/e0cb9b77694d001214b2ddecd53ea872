@@ -1,0 +1,5 @@
+package com.example.msns_taskshowtestproject_ver01.StaticValue;
+
+public class StaticValue {
+	public static long numberOfAlarmTerm = 3000;
+}

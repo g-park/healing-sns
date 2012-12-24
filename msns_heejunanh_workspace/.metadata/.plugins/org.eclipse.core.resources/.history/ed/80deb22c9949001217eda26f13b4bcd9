@@ -1,0 +1,22 @@
+package com.example.test_andorid_grid_view_main;
+
+import android.content.Context;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+public class MainGridItem extends LinearLayout {
+
+	private ImageView mIcon;
+	private TextView mLabel;
+	private int mIconId;
+	private String mLabelString;
+	private int mPosition;
+	private Context mContext;
+	
+	public MainGridItem(Context context) {
+		super(context);
+	}
+
+	ImageView imageView;
+}

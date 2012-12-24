@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.garamsoft.bubble.view.BackGroundWeather_FrameLayout
+        android:id="@+id/backGroundWeatherFrameLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </com.garamsoft.bubble.view.BackGroundWeather_FrameLayout>
+
+    <Button
+        android:id="@+id/buttonHome"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="right"
+        android:background="@drawable/tab2_home_btn"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+         />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom|center"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="280dp"
+            android:layout_height="190dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center|bottom"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textViewLocationName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="지역"
+                   	android:layout_gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <Button
+                        android:id="@+id/btnPreWeather"
+                        android:layout_width="20dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/tab2_weath_pre_btn" />
+
+                    <com.garamsoft.bubble.view.ViewWeatherInfoLinear
+                        android:id="@+id/viewWeatherInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+                    </com.garamsoft.bubble.view.ViewWeatherInfoLinear>
+
+                    <Button
+                        android:id="@+id/btnNextWeather"
+                        android:layout_width="20dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/tab2_weath_next_btn" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/tab2_weather_info_thermometer"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <Button
+                android:id="@+id/btnRefreshWeather"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="1dp"
+                android:background="@drawable/btn_refresh"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="280dp"
+            android:layout_height="180dp" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textViewCalendar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="오늘의 일정"
+                    android:layout_gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <ListView
+                    android:id="@android:id/list"
+                    android:layout_width="240dp"
+                    android:layout_height="130dp"
+                    android:background="@drawable/tab2_info_window"
+                    android:cacheColorHint="#00000000"
+                    android:padding="10dp" >
+                </ListView>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="right"
+                android:background="@drawable/tab2_weather_info_calendar_"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>
